@@ -1,0 +1,98 @@
+
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أبو نجيب - نظام إدارة المصاريف</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="login-page">
+    <div class="animation-bubbles"></div>
+    
+    <div class="login-container">
+        <div class="logo-header">
+            <img src="assets/images/logo.png" alt="شعار أبو نجيب" class="logo">
+            <h1>نظام إدارة المصاريف <span>أبو نجيب</span></h1>
+            <p>الحل الأمثل للشركات العملاقة</p>
+        </div>
+        
+        <div class="form-container">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="login">تسجيل الدخول</button>
+                <button class="tab-btn" data-tab="register">إنشاء حساب</button>
+            </div>
+            
+            <div class="tab-content active" id="login">
+                <form class="login-form">
+                    <div class="input-group floating">
+                        <input type="text" id="login-email" required>
+                        <label for="login-email">البريد الإلكتروني</label>
+                        <span class="icon">✉️</span>
+                    </div>
+                    
+                    <div class="input-group floating">
+                        <input type="password" id="login-password" required>
+                        <label for="login-password">كلمة المرور</label>
+                        <span class="icon">🔒</span>
+                    </div>
+                    
+                    <div class="options">
+                        <label class="remember-me">
+                            <input type="checkbox"> تذكرني
+                        </label>
+                        <a href="#" class="forgot-password">نسيت كلمة المرور؟</a>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">تسجيل الدخول</button>
+                </form>
+            </div>
+            
+            <div class="tab-content" id="register">
+                <form class="register-form">
+                    <div class="input-group floating">
+                        <input type="text" id="company-name" required>
+                        <label for="company-name">اسم الشركة</label>
+                        <span class="icon">🏢</span>
+                    </div>
+                    
+                    <div class="input-group floating">
+                        <input type="email" id="register-email" required>
+                        <label for="register-email">البريد الإلكتروني</label>
+                        <span class="icon">✉️</span>
+                    </div>
+                    
+                    <div class="input-group floating">
+                        <input type="tel" id="phone" required>
+                        <label for="phone">رقم الهاتف</label>
+                        <span class="icon">📱</span>
+                    </div>
+                    
+                    <div class="input-group floating">
+                        <input type="password" id="register-password" required>
+                        <label for="register-password">كلمة المرور</label>
+                        <span class="icon">🔒</span>
+                    </div>
+                    
+                    <div class="input-group floating">
+                        <input type="password" id="confirm-password" required>
+                        <label for="confirm-password">تأكيد كلمة المرور</label>
+                        <span class="icon">🔒</span>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">إنشاء حساب</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="login-footer">
+            <p>© 2023 أبو نجيب. جميع الحقوق محفوظة.</p>
+        </div>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
